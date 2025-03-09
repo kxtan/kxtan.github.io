@@ -3,29 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KX's Digital Space</title>
+    <title>Kuok Xuen Tan - ML Engineer</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <div class="glowing-circle"></div>
         <header>
-            <h1 class="glitch" data-text="KX TAN">KX TAN</h1>
-            <p class="subtitle">Developer • Creator • Explorer</p>
+            <h1 class="glitch" data-text="KUOK XUEN TAN">KUOK XUEN TAN</h1>
+            <p class="subtitle">Machine Learning Engineer • AI Researcher • Developer</p>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> Penang, Malaysia</p>
         </header>
         
         <nav>
-            <a href="projects.html" class="nav-link">Projects</a>
-            <a href="about.html" class="nav-link">About</a>
-            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#skills" class="nav-link">Skills</a>
         </nav>
 
         <main>
-            <div class="card">
-                <h2>Welcome to My Digital Universe</h2>
-                <p>Where code meets creativity and innovation takes form.</p>
-            </div>
+            <section id="about" class="card">
+                <h2><i class="fas fa-user-circle"></i> About Me</h2>
+                <p>Machine Learning Engineer specialized in AI applications, data pipelines, and cloud infrastructure. Experienced in developing and deploying ML models with a focus on practical business impact.</p>
+            </section>
+
+            <section id="experience" class="card">
+                <h2><i class="fas fa-briefcase"></i> Experience</h2>
+                
+                <div class="experience-item">
+                    <h3>Navigator</h3>
+                    <p class="role">Machine Learning Engineer</p>
+                    <p class="duration">January 2024 - Present</p>
+                    <ul>
+                        <li>Design and maintain scalable data pipelines for AI initiatives</li>
+                        <li>Manage AWS cloud infrastructure (ECS, Lambda, Docker)</li>
+                        <li>Implement CI/CD pipelines using GitHub Actions</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Intel Corporation</h3>
+                    <p class="role">Machine Learning Engineer</p>
+                    <p class="duration">August 2022 - January 2024</p>
+                    <ul>
+                        <li>Developed ML solutions for semiconductor fabrication</li>
+                        <li>Optimized Large Language Models (LLMs)</li>
+                        <li>Led AI project roadmaps and research initiatives</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="skills" class="card">
+                <h2><i class="fas fa-code"></i> Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>AI/ML</h3>
+                        <p>TensorFlow, PyTorch, Hugging Face, LLMs</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Cloud</h3>
+                        <p>AWS (ECS, Lambda), Docker, CI/CD</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <p>Python, TypeScript, C#</p>
+                    </div>
+                </div>
+            </section>
         </main>
+
+        <footer>
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </footer>
     </div>
     <div class="cursor-glow"></div>
     <script src="script.js"></script>
