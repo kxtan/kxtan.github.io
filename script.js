@@ -1,21 +1,3 @@
-document.addEventListener('mousemove', (e) => {
-    const cursor = document.querySelector('.cursor-glow');
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
-});
-
-document.querySelectorAll('a, button').forEach(element => {
-    element.addEventListener('mouseenter', () => {
-        const cursor = document.querySelector('.cursor-glow');
-        cursor.style.transform = 'scale(2)';
-    });
-    
-    element.addEventListener('mouseleave', () => {
-        const cursor = document.querySelector('.cursor-glow');
-        cursor.style.transform = 'scale(1)';
-    });
-});
-
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -42,4 +24,21 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('section').forEach((section) => {
     section.classList.add('hidden');
     observer.observe(section);
+});
+
+// Add active state to nav links on scroll
+window.addEventListener('scroll', () => {
+    let scrollPosition = window.scrollY;
+    
+    document.querySelectorAll('section').forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        const sectionHeight = section.clientHeight;
+        const sectionId = section.getAttribute('id');
+        
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            document.querySelector(`nav a[href="#${sectionId}"]`)?.classList.add('active');
+        } else {
+            document.querySelector(`nav a[href="#${sectionId}"]`)?.classList.remove('active');
+        }
+    });
 });
