@@ -4,30 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="Kuok Xuen Tan - Senior AI Engineer based in Malaysia. Enterprise generative AI, NLP and applied machine learning.">
-    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#0d0d0d" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#FAF6EF" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#1A1917" media="(prefers-color-scheme: dark)">
     <title>Kuok Xuen Tan</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Share preview (LinkedIn, WhatsApp, X) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kuok Xuen Tan · Senior AI Engineer">
+    <meta property="og:description" content="Enterprise generative AI, NLP and applied machine learning. Based in Malaysia.">
+    <meta property="og:url" content="https://kxtan.github.io/">
+    <meta property="og:image" content="https://kxtan.github.io/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Apply the saved or system theme before first paint (avoids a flash) -->
+    <script>
+        (function () {
+            var t = null;
+            try { t = localStorage.getItem('theme'); } catch (e) {}
+            if (t !== 'light' && t !== 'dark') t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', t);
+        })();
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,500,100&family=Inter:wght@400;500;600&family=Silkscreen&display=swap">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Kuok Xuen Tan</h1>
-            <p class="subtitle">Senior AI Engineer</p>
-            <p class="location">Enterprise Generative AI · NLP · Applied Machine Learning · Malaysia</p>
-        </header>
+        <div class="sidebar">
+            <header>
+                <div class="header-text">
+                    <h1>Kuok Xuen Tan</h1>
+                    <p class="subtitle">Senior AI Engineer</p>
+                    <p class="location">Enterprise Generative AI · NLP · Applied Machine Learning · Malaysia</p>
+                </div>
+                <svg class="pixel-desk" viewBox="0 0 72 34" shape-rendering="crispEdges" role="img" aria-label="Pixel art of a desk with a monitor showing code, a steaming coffee mug, a small plant and Miso the ginger cat asleep beside it">
+                    <g><rect class="px-ink" x="15" y="6" width="26" height="1"/><rect class="px-ink" x="15" y="7" width="1" height="1"/><rect class="px-ink" x="40" y="7" width="1" height="1"/><rect class="px-screen" x="16" y="7" width="24" height="1"/><rect class="px-ink" x="15" y="8" width="1" height="1"/><rect class="px-ink" x="40" y="8" width="1" height="1"/><rect class="px-screen" x="16" y="8" width="24" height="1"/><rect class="px-accent" x="18" y="9" width="7" height="1"/><rect class="px-cream" x="26" y="9" width="5" height="1"/><rect class="px-ink" x="15" y="9" width="1" height="1"/><rect class="px-ink" x="40" y="9" width="1" height="1"/><rect class="px-screen" x="16" y="9" width="2" height="1"/><rect class="px-screen" x="25" y="9" width="1" height="1"/><rect class="px-screen" x="31" y="9" width="9" height="1"/><rect class="px-ink" x="15" y="10" width="1" height="1"/><rect class="px-ink" x="40" y="10" width="1" height="1"/><rect class="px-screen" x="16" y="10" width="24" height="1"/><rect class="px-cream" x="31" y="11" width="4" height="1"/><rect class="px-ink" x="15" y="11" width="1" height="1"/><rect class="px-ink" x="40" y="11" width="1" height="1"/><rect class="px-screen" x="16" y="11" width="4" height="1"/><rect class="px-screen" x="30" y="11" width="1" height="1"/><rect class="px-screen" x="35" y="11" width="5" height="1"/><rect class="px-teal" x="20" y="11" width="10" height="1"/><rect class="px-ink" x="15" y="12" width="1" height="1"/><rect class="px-ink" x="40" y="12" width="1" height="1"/><rect class="px-screen" x="16" y="12" width="24" height="1"/><rect class="px-accent" x="26" y="13" width="8" height="1"/><rect class="px-cream" x="20" y="13" width="5" height="1"/><rect class="px-ink" x="15" y="13" width="1" height="1"/><rect class="px-ink" x="40" y="13" width="1" height="1"/><rect class="px-screen" x="16" y="13" width="4" height="1"/><rect class="px-screen" x="25" y="13" width="1" height="1"/><rect class="px-screen" x="34" y="13" width="6" height="1"/><rect class="px-ink" x="15" y="14" width="1" height="1"/><rect class="px-ink" x="40" y="14" width="1" height="1"/><rect class="px-leaf" x="6" y="14" width="2" height="1"/><rect class="px-screen" x="16" y="14" width="24" height="1"/><rect class="px-cream" x="28" y="15" width="3" height="1"/><rect class="px-ink" x="15" y="15" width="1" height="1"/><rect class="px-ink" x="40" y="15" width="1" height="1"/><rect class="px-leaf" x="3" y="15" width="1" height="1"/><rect class="px-leaf" x="6" y="15" width="1" height="1"/><rect class="px-leaf" x="9" y="15" width="2" height="1"/><rect class="px-screen" x="16" y="15" width="2" height="1"/><rect class="px-screen" x="27" y="15" width="1" height="1"/><rect class="px-screen" x="31" y="15" width="9" height="1"/><rect class="px-teal" x="18" y="15" width="9" height="1"/><rect class="px-ink" x="15" y="16" width="1" height="1"/><rect class="px-ink" x="40" y="16" width="1" height="1"/><rect class="px-leaf" x="4" y="16" width="2" height="1"/><rect class="px-leaf" x="8" y="16" width="2" height="1"/><rect class="px-screen" x="16" y="16" width="24" height="1"/><rect class="px-cream" x="18" y="17" width="4" height="1"/><rect class="px-ink" x="15" y="17" width="1" height="1"/><rect class="px-ink" x="40" y="17" width="1" height="1"/><rect class="px-leaf" x="5" y="17" width="1" height="1"/><rect class="px-leaf" x="7" y="17" width="2" height="1"/><rect class="px-leafd" x="6" y="17" width="1" height="1"/><rect class="px-screen" x="16" y="17" width="2" height="1"/><rect class="px-screen" x="22" y="17" width="18" height="1"/><rect class="px-ink" x="15" y="18" width="1" height="1"/><rect class="px-ink" x="40" y="18" width="1" height="1"/><rect class="px-leaf" x="2" y="18" width="2" height="1"/><rect class="px-leaf" x="9" y="18" width="2" height="1"/><rect class="px-leafd" x="7" y="18" width="1" height="1"/><rect class="px-screen" x="16" y="18" width="24" height="1"/><rect class="px-cat" x="53" y="19" width="1" height="1"/><rect class="px-cat" x="59" y="19" width="1" height="1"/><rect class="px-ink" x="15" y="19" width="1" height="1"/><rect class="px-ink" x="40" y="19" width="1" height="1"/><rect class="px-leaf" x="3" y="19" width="2" height="1"/><rect class="px-leaf" x="8" y="19" width="2" height="1"/><rect class="px-leafd" x="5" y="19" width="1" height="1"/><rect class="px-screen" x="16" y="19" width="24" height="1"/><rect class="px-cat" x="53" y="20" width="1" height="1"/><rect class="px-cat" x="59" y="20" width="1" height="1"/><rect class="px-ink" x="15" y="20" width="1" height="1"/><rect class="px-ink" x="40" y="20" width="1" height="1"/><rect class="px-leaf" x="4" y="20" width="2" height="1"/><rect class="px-leaf" x="7" y="20" width="2" height="1"/><rect class="px-leafd" x="6" y="20" width="1" height="1"/><rect class="px-pink" x="54" y="20" width="1" height="1"/><rect class="px-pink" x="58" y="20" width="1" height="1"/><rect class="px-screen" x="16" y="20" width="24" height="1"/><rect class="px-cat" x="54" y="21" width="2" height="1"/><rect class="px-cat" x="57" y="21" width="2" height="1"/><rect class="px-catd" x="56" y="21" width="1" height="1"/><rect class="px-ink" x="15" y="21" width="23" height="1"/><rect class="px-ink" x="39" y="21" width="2" height="1"/><rect class="px-leaf" x="5" y="21" width="1" height="1"/><rect class="px-leaf" x="7" y="21" width="1" height="1"/><rect class="px-leafd" x="6" y="21" width="1" height="1"/><rect class="px-teal" x="38" y="21" width="1" height="1"/><rect class="px-cat" x="53" y="22" width="3" height="1"/><rect class="px-cat" x="57" y="22" width="3" height="1"/><rect class="px-catd" x="56" y="22" width="1" height="1"/><rect class="px-coffee" x="44" y="22" width="5" height="1"/><rect class="px-ink" x="15" y="22" width="26" height="1"/><rect class="px-leafd" x="6" y="22" width="1" height="1"/><rect class="px-mug" x="43" y="22" width="1" height="1"/><rect class="px-mug" x="49" y="22" width="1" height="1"/><rect class="px-cat" x="53" y="23" width="6" height="1"/><rect class="px-cat" x="60" y="23" width="1" height="1"/><rect class="px-cat" x="62" y="23" width="2" height="1"/><rect class="px-catd" x="59" y="23" width="1" height="1"/><rect class="px-catd" x="61" y="23" width="1" height="1"/><rect class="px-ink" x="26" y="23" width="4" height="1"/><rect class="px-mug" x="43" y="23" width="7" height="1"/><rect class="px-potd" x="2" y="23" width="9" height="1"/><rect class="px-cat" x="53" y="24" width="8" height="1"/><rect class="px-cat" x="62" y="24" width="1" height="1"/><rect class="px-cat" x="64" y="24" width="1" height="1"/><rect class="px-catd" x="61" y="24" width="1" height="1"/><rect class="px-catd" x="63" y="24" width="1" height="1"/><rect class="px-ink" x="26" y="24" width="4" height="1"/><rect class="px-mug" x="43" y="24" width="9" height="1"/><rect class="px-pot" x="3" y="24" width="7" height="1"/><rect class="px-accent" x="43" y="25" width="7" height="1"/><rect class="px-cat" x="53" y="25" width="3" height="1"/><rect class="px-cat" x="57" y="25" width="6" height="1"/><rect class="px-cat" x="64" y="25" width="1" height="1"/><rect class="px-catd" x="63" y="25" width="1" height="1"/><rect class="px-ink" x="26" y="25" width="4" height="1"/><rect class="px-mug" x="51" y="25" width="1" height="1"/><rect class="px-pink" x="56" y="25" width="1" height="1"/><rect class="px-pot" x="3" y="25" width="7" height="1"/><rect class="px-cat" x="53" y="26" width="2" height="1"/><rect class="px-cat" x="58" y="26" width="7" height="1"/><rect class="px-ink" x="26" y="26" width="4" height="1"/><rect class="px-mug" x="43" y="26" width="7" height="1"/><rect class="px-mug" x="51" y="26" width="1" height="1"/><rect class="px-potd" x="3" y="26" width="7" height="1"/><rect class="px-white" x="55" y="26" width="3" height="1"/><rect class="px-cat" x="55" y="27" width="10" height="1"/><rect class="px-kb" x="14" y="27" width="2" height="1"/><rect class="px-kb" x="17" y="27" width="1" height="1"/><rect class="px-kb" x="19" y="27" width="1" height="1"/><rect class="px-kb" x="21" y="27" width="1" height="1"/><rect class="px-kb" x="23" y="27" width="1" height="1"/><rect class="px-kb" x="25" y="27" width="1" height="1"/><rect class="px-kb" x="27" y="27" width="1" height="1"/><rect class="px-kb" x="29" y="27" width="1" height="1"/><rect class="px-kb" x="31" y="27" width="1" height="1"/><rect class="px-kb" x="33" y="27" width="1" height="1"/><rect class="px-kb" x="35" y="27" width="1" height="1"/><rect class="px-kb" x="37" y="27" width="3" height="1"/><rect class="px-kbd" x="16" y="27" width="1" height="1"/><rect class="px-kbd" x="18" y="27" width="1" height="1"/><rect class="px-kbd" x="20" y="27" width="1" height="1"/><rect class="px-kbd" x="22" y="27" width="1" height="1"/><rect class="px-kbd" x="24" y="27" width="1" height="1"/><rect class="px-kbd" x="26" y="27" width="1" height="1"/><rect class="px-kbd" x="28" y="27" width="1" height="1"/><rect class="px-kbd" x="30" y="27" width="1" height="1"/><rect class="px-kbd" x="32" y="27" width="1" height="1"/><rect class="px-kbd" x="34" y="27" width="1" height="1"/><rect class="px-kbd" x="36" y="27" width="1" height="1"/><rect class="px-mug" x="43" y="27" width="9" height="1"/><rect class="px-pot" x="3" y="27" width="7" height="1"/><rect class="px-cat" x="56" y="28" width="3" height="1"/><rect class="px-cat" x="61" y="28" width="4" height="1"/><rect class="px-kb" x="14" y="28" width="26" height="1"/><rect class="px-mug" x="43" y="28" width="7" height="1"/><rect class="px-pot" x="3" y="28" width="7" height="1"/><rect class="px-white" x="54" y="28" width="2" height="1"/><rect class="px-white" x="59" y="28" width="2" height="1"/><rect class="px-desk" x="0" y="29" width="72" height="1"/><rect class="px-deskd" x="0" y="30" width="72" height="1"/><rect class="px-deskd" x="0" y="31" width="72" height="1"/><rect class="px-deskd" x="4" y="32" width="3" height="1"/><rect class="px-deskd" x="65" y="32" width="3" height="1"/><rect class="px-deskd" x="4" y="33" width="3" height="1"/><rect class="px-deskd" x="65" y="33" width="3" height="1"/></g>
+                    <g class="px-blink"><rect class="px-cream" x="23" y="17" width="2" height="1"/></g>
+                    <g class="px-steam"><rect class="px-steam" x="45" y="16" width="1" height="1"/><rect class="px-steam" x="46" y="17" width="1" height="1"/><rect class="px-steam" x="45" y="18" width="1" height="1"/><rect class="px-steam" x="44" y="19" width="1" height="1"/><rect class="px-steam" x="45" y="20" width="1" height="1"/></g>
+                    <g class="px-steam b"><rect class="px-steam" x="47" y="15" width="1" height="1"/><rect class="px-steam" x="46" y="16" width="1" height="1"/><rect class="px-steam" x="47" y="17" width="1" height="1"/><rect class="px-steam" x="48" y="18" width="1" height="1"/><rect class="px-steam" x="47" y="19" width="1" height="1"/></g>
+                    <g><rect class="px-eye" x="54" y="24" width="2" height="1"/><rect class="px-eye" x="57" y="24" width="2" height="1"/></g>
+                    <g class="px-tail"><rect class="px-cat" x="66" y="24" width="1" height="1"/><rect class="px-cat" x="67" y="25" width="1" height="1"/><rect class="px-cat" x="67" y="26" width="1" height="1"/><rect class="px-cat" x="66" y="27" width="1" height="1"/><rect class="px-cat" x="65" y="28" width="1" height="1"/></g>
+                    <g class="px-tail b"><rect class="px-cat" x="68" y="25" width="1" height="1"/><rect class="px-cat" x="68" y="26" width="1" height="1"/><rect class="px-cat" x="67" y="27" width="1" height="1"/><rect class="px-cat" x="65" y="28" width="2" height="1"/></g>
+                    <g class="px-zzz"><rect class="px-zz" x="64" y="11" width="4" height="1"/><rect class="px-zz" x="66" y="12" width="1" height="1"/><rect class="px-zz" x="65" y="13" width="1" height="1"/><rect class="px-zz" x="64" y="14" width="4" height="1"/></g>
+                </svg>
+            </header>
 
-        <nav>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#experience" class="nav-link">Experience</a>
-            <a href="#education" class="nav-link">Education</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#talks" class="nav-link">Talks</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#contact" class="nav-link">Contact</a>
-        </nav>
+            <nav>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#talks" class="nav-link">Talks</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" hidden>
+                    <svg class="i-moon" viewBox="-0.5 -0.5 9 9" aria-hidden="true"><rect x="2" y="0" width="3" height="1"/><rect x="1" y="1" width="2" height="1"/><rect x="0" y="2" width="2" height="1"/><rect x="0" y="3" width="2" height="1"/><rect x="0" y="4" width="2" height="1"/><rect x="0" y="5" width="2" height="1"/><rect x="6" y="5" width="1" height="1"/><rect x="1" y="6" width="6" height="1"/><rect x="2" y="7" width="4" height="1"/></svg>
+                    <svg class="i-sun" viewBox="0 0 9 9" aria-hidden="true"><rect x="4" y="0" width="1" height="1"/><rect x="1" y="1" width="1" height="1"/><rect x="7" y="1" width="1" height="1"/><rect x="3" y="2" width="3" height="1"/><rect x="2" y="3" width="5" height="1"/><rect x="0" y="4" width="1" height="1"/><rect x="2" y="4" width="5" height="1"/><rect x="8" y="4" width="1" height="1"/><rect x="2" y="5" width="5" height="1"/><rect x="3" y="6" width="3" height="1"/><rect x="1" y="7" width="1" height="1"/><rect x="7" y="7" width="1" height="1"/><rect x="4" y="8" width="1" height="1"/></svg>
+                </button>
+            </nav>
+
+            <div class="sidebar-contact">
+                <a href="https://github.com/kxtan" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/kuokxuen" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:tkxuen@gmail.com">Email</a>
+                <a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            </div>
+        </div>
 
         <main>
             <section id="about">
@@ -149,6 +195,13 @@
                         <a href="https://bloobloo.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link">View</a>
                     </div>
                     <p class="project-description">A personal AI-powered web application for capturing and organizing recreational diving records, with AI-assisted insights to surface patterns from dive data.</p>
+                </article>
+                <article class="project-item">
+                    <div class="project-header">
+                        <h3>Miso Cafe</h3>
+                        <a href="https://kxtan.github.io/cafe-site/" target="_blank" rel="noopener noreferrer" class="project-link">View</a>
+                    </div>
+                    <p class="project-description">A cozy lofi website for a Penang shophouse café, starring Miso the cat. Hand-drawn SVG scene with canvas rain, day/night modes, a live "open now" badge, seasonal festival outfits and an in-browser Web Audio lofi radio.</p>
                 </article>
             </section>
 
