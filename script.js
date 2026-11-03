@@ -57,7 +57,7 @@ if (toggle) {
 // Active nav link on scroll
 const navLinks = document.querySelectorAll('.nav-link');
 
-window.addEventListener('scroll', () => {
+function updateActiveLink() {
     let current = '';
     const scrollPosition = window.scrollY + 100;
 
@@ -70,7 +70,15 @@ window.addEventListener('scroll', () => {
         }
     });
 
+    // Near the top of the page, highlight the first section
+    if (!current && sections.length && window.scrollY < sections[0].offsetTop) {
+        current = sections[0].getAttribute('id');
+    }
+
     navLinks.forEach(link => {
         link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
     });
-}, { passive: true });
+}
+
+window.addEventListener('scroll', updateActiveLink, { passive: true });
+updateActiveLink();
